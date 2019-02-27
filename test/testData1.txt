@@ -1,0 +1,6 @@
+c: 3
+list:
+  2: xiao
+  3: ming
+  4: hha
+A: 1

@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{18220B46-098B-44F9-9349-7C16700E4781}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Project1</RootNamespace>
+    <AssemblyName>Project1</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="YamlDotNet, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\YamlDotNet.5.4.0\lib\net45\YamlDotNet.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AttributeTask.cs" />
+    <Compile Include="Attribute\ConditionTest.cs" />
+    <Compile Include="Attribute\CustomTest.cs" />
+    <Compile Include="Attribute\ObsoleteTest.cs" />
+    <Compile Include="Attribute\Order\CallTraceAttribute.cs" />
+    <Compile Include="Attribute\Order\CallTraceProperty.cs" />
+    <Compile Include="Attribute\Order\CallTraceSink.cs" />
+    <Compile Include="Attribute\Order\Order.cs" />
+    <Compile Include="CoroutinesTask.cs" />
+    <Compile Include="FileTask.cs" />
+    <Compile Include="InterfaceTask.cs" />
+    <Compile Include="ITask.cs" />
+    <Compile Include="MeasureCPUTimeTask.cs" />
+    <Compile Include="OrderTask.cs" />
+    <Compile Include="OtherTask.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RefactorTask.cs" />
+    <Compile Include="RegexTask.cs" />
+    <Compile Include="ReturnTask.cs" />
+    <Compile Include="SerializeTask.cs" />
+    <Compile Include="Serialize\Data\Class.cs" />
+    <Compile Include="Serialize\Data\Config.cs" />
+    <Compile Include="Serialize\Data\People.cs" />
+    <Compile Include="Serialize\ISerialiable.cs" />
+    <Compile Include="Serialize\SerializeManage.cs" />
+    <Compile Include="Serialize\SerializeProcessor.cs" />
+    <Compile Include="Serialize\Serializer.cs" />
+    <Compile Include="StringTask.cs" />
+    <Compile Include="Task1.cs" />
+    <Compile Include="YamlTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

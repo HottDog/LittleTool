@@ -12,10 +12,10 @@ namespace Project1
         public void Run()
         {
             Order order1 = new Order(100);
-            Order.Submit("item1", 50);
+            order1.Submit("item1", 50);
 
             Order order2 = new Order(500);
-            Order.Submit("item2", 150);
+            order2.Submit("item2", 150);
             
         }
     }

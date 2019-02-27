@@ -53,6 +53,16 @@
     <Compile Include="Attribute\Order\CallTraceProperty.cs" />
     <Compile Include="Attribute\Order\CallTraceSink.cs" />
     <Compile Include="Attribute\Order\Order.cs" />
+    <Compile Include="Attribute\TimeStaticTask.cs" />
+    <Compile Include="Attribute\TimeStaticTool\ReflectionUtil.cs" />
+    <Compile Include="Attribute\TimeStaticTool\TimeStatic.cs" />
+    <Compile Include="Attribute\TimeStaticTool\TimeStaticAttribute.cs" />
+    <Compile Include="Attribute\TimeStaticTool\TimeStaticClientContextProperty.cs" />
+    <Compile Include="Attribute\TimeStaticTool\TimeStaticContextAttribute.cs" />
+    <Compile Include="Attribute\TimeStaticTool\TimeStaticEnvoyPropery.cs" />
+    <Compile Include="Attribute\TimeStaticTool\TimeStaticProperty.cs" />
+    <Compile Include="Attribute\TimeStaticTool\TimeStaticSink.cs" />
+    <Compile Include="Attribute\TimeStaticTool\TimeStaticTestCase.cs" />
     <Compile Include="CoroutinesTask.cs" />
     <Compile Include="FileTask.cs" />
     <Compile Include="InterfaceTask.cs" />

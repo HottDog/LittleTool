@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Project1.Attribute;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,7 +23,8 @@ namespace Project1 {
             //task = new RefactorTask();
             //task = new SerializeTask();
             //task = new YamlTest();
-            task = new OrderTask();
+            //task = new OrderTask();
+            task = new TimeStaticTask();
             task.Run();
             Console.ReadKey();
         }

@@ -19,11 +19,17 @@ namespace Project1.Attribute.Order
             
         }
 
-        public static void Submit(string pro,int quan)
+        public void Submit(string pro,int quan)
         {
             //product = pro;
             //quantity = quan;
             Console.WriteLine("submit：" + pro + "," + quan);
+            Print();
+        }
+
+        private void Print()
+        {
+            Console.WriteLine("print");
         }
     }
 }
